@@ -1,0 +1,124 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-aws_instance.awsvm",
+      "label": "Instances - aws_instance.awsvm"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "Other-aws",
+      "label": "Other - aws"
+    },
+    {
+      "name": "instances",
+      "label": "Instances"
+    },
+    {
+      "name": "aws_instance_networks",
+      "label": "aws_instance Networks"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "awsvm_ami",
+      "label": "Awsvm Ami",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "awsvm_aws_instance_type",
+      "label": "Awsvm Aws Instance Type",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "availability_zone",
+      "label": "Availability Zone",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false,
+      "options": [
+        {
+          "value": "us-east-1a",
+          "label": "us-east-1a",
+          "default": true
+        },
+        {
+          "value": "us-east-1b",
+          "label": "us-east-1b"
+        },
+        {
+          "value": "us-east-1d",
+          "label": "us-east-1d"
+        }
+      ]
+    },
+    {
+      "name": "awsvm_name",
+      "label": "Awsvm Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vpc_id",
+      "label": "vpc_id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "validation": "",
+      "group_name": "",
+      "required": false,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [  {
+    "name": "public_ip",
+    "label": "public_ip",
+    "description": "",
+    "group_name": "",
+    "secured": false,
+    "hidden": false,
+    "shortname": ""
+  } ]
+}
